@@ -5,7 +5,7 @@ export default function postReducer(state = [], action) {
     case ADD_POST:
       return [...state, action.payload];
     case DELETE_POST:
-      return state.filter(post => post.id != action.payload.id);
+      return state.filter(post => post.id !== action.payload.id);
     default:
       return state;
   }

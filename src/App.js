@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import NewPost from "./NewPost.js";
+import CreatePost from "./containers/CreatePost";
+import PostList from "./containers/PostList";
 
 class App extends Component {
   render() {
@@ -9,9 +9,11 @@ class App extends Component {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <NewPost />
+            <CreatePost />
           </div>
-          <div className="col-md-6">Display Post</div>
+          <div className="col-md-6">
+            <PostList />
+          </div>
         </div>
       </div>
     );
